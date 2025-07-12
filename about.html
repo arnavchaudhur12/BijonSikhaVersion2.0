@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About BijonSikha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .video-frame-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .video-frame {
+            border: 4px solid #e5e7eb;
+            border-radius: 16px;
+            overflow: hidden;
+            width: 700px;
+            height: 400px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 500px) {
+            .video-frame {
+                width: 100vw;
+                height: 56vw;
+                min-height: 200px;
+                min-width: 200px;
+                max-width: 98vw;
+                max-height: 98vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://i.postimg.cc/Hx8QfWZZ/bijonsikha.jpg?w=500" style="height:70px;">
+                <img src="https://ehealth.eletsonline.com/wp-content/uploads/2015/07/manipal-hospital.jpg" alt="Manipal Hospital Logo" style="height:70px; margin-left:16px;">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html#form" class="btn btn-primary">Book a Consultation</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section about-page">
+            <div class="container text-container">
+                <h1 class="page-title">About BijonSikha</h1>
+                <p>BijonSikha is a compassionate elder care service in Kolkata, dedicated to providing dignified and respectful care for seniors. We are backed by the medical excellence of Manipal Hospitals, ensuring access to top doctors and advanced technology.</p>
+                
+                <h2>Our Mission</h2>
+                <p>Our mission is to enhance the quality of life for seniors by providing personalized care that respects their dignity and independence. We strive to create a supportive environment where seniors feel valued and cared for.</p>
+                
+                <!-- Video Section with Autoplay -->
+                <div class="video-frame-container">
+                    <div class="video-frame">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/EXAYVi0ZLRs?si=3EfGDC6kJH-MZo3i&autoplay=1&mute=1" 
+                            title="BijonSikha Video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+                <!-- End Video Section -->
+
+                <h2>History of the Niramay Group</h2>
+                <p>BijonSikha is a part of the Niramay Group, a trusted name in healthcare for over two decades. With a legacy of compassionate care and medical excellence, Niramay Group has been serving the community with dedication and integrity.</p>
+
+                <h2>Collaboration with Manipal Hospitals</h2>
+                <p>Our collaboration with Manipal Hospitals brings unparalleled medical expertise to our elder care services. This partnership ensures that our seniors have access to top doctors, advanced medical technology, and seamless healthcare support.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p>©2024 BijonSikha. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
