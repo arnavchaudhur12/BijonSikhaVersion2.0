@@ -470,3 +470,38 @@ form button {
         gap: 2rem;
     }
 }
+
+/* --- Service Table Styling --- */
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  background-color: var(--white);
+  border: 2px solid var(--border-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.service-table th,
+.service-table td {
+  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.service-table thead th {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.service-table tbody tr:nth-child(even) {
+  background-color: var(--bg-light);
+}
+
+.service-table tbody tr:hover {
+  background-color: #fef6f0;
+  transition: background-color 0.3s ease-in-out;
+}
