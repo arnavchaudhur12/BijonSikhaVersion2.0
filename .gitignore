@@ -1,0 +1,5 @@
+backend/data/*.db
+backend/data/*.db-*
+backend/generated-bills/*.pdf
+backend/.env
+backend/node_modules/

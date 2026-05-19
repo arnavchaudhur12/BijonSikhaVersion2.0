@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal | BijonSikha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <div class="accessibility-toolbar">
+      <div class="accessibility-panel">
+        <span class="tool-label">Viewing options</span>
+        <button class="tool-button" type="button" data-font-size="default">A</button>
+        <button class="tool-button" type="button" data-font-size="large">A+</button>
+        <button class="tool-button" type="button" data-font-size="xlarge">A++</button>
+        <button class="tool-button" type="button" data-contrast-toggle aria-pressed="false">High contrast</button>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="header-shell">
+        <a href="index.html" class="logo">
+          <div class="logo-stack">
+            <img class="logo-mark" src="companylogo/medmitra/bijonsikha.jpg" alt="BijonSikha logo">
+            <div class="logo-copy">
+              <span class="logo-title">BijonSikha</span>
+              <small>Compassionate elder care, beautifully coordinated</small>
+            </div>
+          </div>
+          <img class="partner-logo" src="companylogo/manipal/manipal-hospital.webp" alt="Manipal Hospitals logo">
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">☰</button>
+        <nav class="main-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Plans</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html" class="active">Admin</a>
+        </nav>
+        <div class="header-actions">
+          <a href="contact.html#form" class="btn btn-secondary">Public site</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="admin-hero">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Admin portal</span>
+            <h1 class="page-title">Generate bills, review enquiries, and manage support operations.</h1>
+            <p class="section-copy lead">Secure access for internal operations with local SQLite storage and downloadable PDF billing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 1rem;">
+        <div class="container admin-layout">
+          <div id="adminLoginPanel" class="admin-panel" data-reveal>
+            <h2 class="section-title">Admin sign in</h2>
+            <p class="section-copy">Use the authorised admin email and password to open the dashboard.</p>
+            <form id="adminLoginForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="adminEmail">Admin email</label>
+                  <input id="adminEmail" type="email" value="customercare@bijonsikha.com" placeholder="customercare@bijonsikha.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="adminPassword">Password</label>
+                  <div class="password-field">
+                    <input id="adminPassword" type="password" placeholder="Enter password" required>
+                    <button id="passwordToggle" class="password-toggle" type="button" aria-pressed="false">Show</button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Open dashboard</button>
+              <p id="loginStatus" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div id="adminDashboard" hidden>
+            <div class="admin-panel" data-reveal>
+              <div class="admin-heading">
+                <div>
+                  <span class="eyebrow">Dashboard</span>
+                  <h2 class="section-title">Welcome, <span id="adminIdentity">Admin</span></h2>
+                </div>
+                <button class="btn btn-secondary" id="logoutButton" type="button">Log out</button>
+              </div>
+
+              <div class="admin-stats">
+                <div class="admin-stat">
+                  <span class="tool-label">Total enquiries</span>
+                  <strong id="totalSubmissions">0</strong>
+                </div>
+                <div class="admin-stat">
+                  <span class="tool-label">Emails sent</span>
+                  <strong id="emailedSubmissions">0</strong>
+                </div>
+                <div class="admin-stat">
+                  <span class="tool-label">Bills generated</span>
+                  <strong id="totalBills">0</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="admin-grid" style="margin-top: 1.5rem;">
+              <div class="admin-panel" data-reveal>
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">Generate PDF bill</h3>
+                <form id="billingForm">
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="billDate">Bill date</label>
+                      <input id="billDate" type="date">
+                    </div>
+                    <div class="form-group">
+                      <label for="memberName">Member name</label>
+                      <input id="memberName" type="text" required>
+                    </div>
+                    <div class="form-group full-width">
+                      <label for="memberAddress">Member address</label>
+                      <textarea id="memberAddress" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="carePlanName">Care plan name</label>
+                      <input id="carePlanName" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="membershipDuration">Membership duration</label>
+                      <input id="membershipDuration" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="doctorVisits">Doctor visits</label>
+                      <input id="doctorVisits" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="membershipAmount">Membership amount</label>
+                      <input id="membershipAmount" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="escortCharges">Escort charges</label>
+                      <input id="escortCharges" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="totalAmount">Total amount</label>
+                      <input id="totalAmount" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="modeOfPayment">Mode of payment</label>
+                      <input id="modeOfPayment" type="text" required>
+                    </div>
+                    <div class="form-group full-width">
+                      <label for="serviceTenure">Service tenure</label>
+                      <textarea id="serviceTenure" required></textarea>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Generate and download bill</button>
+                  <p id="billingStatus" class="form-status" aria-live="polite"></p>
+                </form>
+              </div>
+
+              <div class="admin-panel" data-reveal>
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">Recent enquiries</h3>
+                <ul id="submissionsList" class="submission-list">
+                  <li class="submission-empty">Loading enquiries...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script defer src="js/site.js?v=20260519b"></script>
+  <script defer src="js/admin.js?v=20260519b"></script>
+</body>
+</html>

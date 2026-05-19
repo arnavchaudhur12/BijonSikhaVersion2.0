@@ -1,250 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Plans - BijonSikha</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plans | BijonSikha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- HEADER NAVIGATION -->
-  <header class="main-header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="https://i.postimg.cc/Hx8QfWZZ/bijonsikha.jpg?w=500" style="height:70px;">
-        <img src="https://ehealth.eletsonline.com/wp-content/uploads/2015/07/manipal-hospital.jpg" alt="Manipal Hospital Logo" style="height:70px; margin-left:16px;">
-      </a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="plans.html" class="active">Our Plans</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#form" class="btn btn-primary">Book a Consultation</a>
+  <div class="site-shell">
+    <div class="accessibility-toolbar">
+      <div class="accessibility-panel">
+        <span class="tool-label">Viewing options</span>
+        <button class="tool-button" type="button" data-font-size="default">A</button>
+        <button class="tool-button" type="button" data-font-size="large">A+</button>
+        <button class="tool-button" type="button" data-font-size="xlarge">A++</button>
+        <button class="tool-button" type="button" data-contrast-toggle aria-pressed="false">High contrast</button>
+      </div>
     </div>
-  </header>
 
-  <main>
+    <header class="main-header">
+      <div class="header-shell">
+        <a href="index.html" class="logo">
+          <div class="logo-stack">
+            <img class="logo-mark" src="companylogo/medmitra/bijonsikha.jpg" alt="BijonSikha logo">
+            <div class="logo-copy">
+              <span class="logo-title">BijonSikha</span>
+              <small>Compassionate elder care, beautifully coordinated</small>
+            </div>
+          </div>
+          <img class="partner-logo" src="companylogo/manipal/manipal-hospital.webp" alt="Manipal Hospitals logo">
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">☰</button>
+        <nav class="main-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html" class="active">Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="contact.html#form" class="btn btn-primary">Book consultation</a>
+        </div>
+      </div>
+    </header>
 
-<section class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Our Plans Comparison</h2>
-    <p class="section-description">Compare features across Hope, Trust, and Prime plans.</p>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Care plans</span>
+            <h1 class="page-title">Choose the level of continuity your family needs.</h1>
+            <p class="section-copy lead">Hope, Trust, and Prime are designed to support different levels of regular engagement, medical follow-through, and coordination intensity.</p>
+          </div>
 
-    <!-- Paste generated table below -->
-    <div class="table-container">
+          <div class="plans-grid">
+            <a class="plan-card plan-link-card highlight" href="#hope-comparison" data-reveal>
+              <span class="plan-badge">Most comprehensive</span>
+              <h3>Hope</h3>
+              <p>Best for families wanting the strongest doctor-visit frequency and broader support access.</p>
+              <span class="pricing-amount">Rs 6000 / month</span>
+              <p class="pricing-meta">Click to compare Hope with Trust and Prime.</p>
+            </a>
+            <a class="plan-card plan-link-card" href="#trust-comparison" data-reveal>
+              <span class="plan-badge">Balanced</span>
+              <h3>Trust</h3>
+              <p>A solid middle path for families who need steady support with moderate visit intensity.</p>
+              <span class="pricing-amount">Rs 5000 / month</span>
+              <p class="pricing-meta">Click to compare Trust with Hope and Prime.</p>
+            </a>
+            <a class="plan-card plan-link-card" href="#prime-comparison" data-reveal>
+              <span class="plan-badge">Essential</span>
+              <h3>Prime</h3>
+              <p>Lean and practical support for lighter but dependable coordination needs.</p>
+              <span class="pricing-amount">Rs 3000 / month</span>
+              <p class="pricing-meta">Click to compare Prime with Hope and Trust.</p>
+            </a>
+          </div>
+        </div>
+      </section>
 
-      
-      <!-- Include Google Font (optional but recommended) -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+      <section class="section">
+        <div class="container">
+          <div class="table-shell" data-reveal>
+            <table class="service-table">
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th>Hope</th>
+                  <th>Trust</th>
+                  <th>Prime</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>24 x 7 emergency hospitalisation and ambulance service</td>
+                  <td><span class="check">Included</span></td>
+                  <td><span class="check">Included</span></td>
+                  <td><span class="check">Included</span></td>
+                </tr>
+                <tr>
+                  <td>Doctor home visit scheduled support</td>
+                  <td>6 free in a year</td>
+                  <td>4 free in a year</td>
+                  <td>2 free in a year</td>
+                </tr>
+                <tr>
+                  <td>Doctor follow-up visit</td>
+                  <td>1500 per visit</td>
+                  <td>1500 per visit</td>
+                  <td>1500 per visit</td>
+                </tr>
+                <tr>
+                  <td>Care manager personal visit</td>
+                  <td><span class="check">Included</span></td>
+                  <td><span class="check">Included</span></td>
+                  <td><span class="check">Included</span></td>
+                </tr>
+                <tr>
+                  <td>Monthly free care manager visit</td>
+                  <td>5 with one free escort</td>
+                  <td>4 with one free escort</td>
+                  <td>3 visits</td>
+                </tr>
+                <tr>
+                  <td>Extra care manager visit cost</td>
+                  <td>500 / 800</td>
+                  <td>500 / 1000</td>
+                  <td>600 / 1000</td>
+                </tr>
+                <tr>
+                  <td>Sunday or listed holiday care manager visit</td>
+                  <td>800</td>
+                  <td>900</td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+                  <td>Courtesy calls per month</td>
+                  <td>8</td>
+                  <td>8</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Help with hospitalisation</td>
+                  <td><span class="check">Included</span></td>
+                  <td><span class="check">Included</span></td>
+                  <td><span class="check">Included</span></td>
+                </tr>
+                <tr>
+                  <td>Monthly membership</td>
+                  <td>6000 per month</td>
+                  <td>5000 per month</td>
+                  <td>3000 per month</td>
+                </tr>
+                <tr>
+                  <td>Yearly membership</td>
+                  <td>72000 per year</td>
+                  <td>60000 per year</td>
+                  <td>36000 per year</td>
+                </tr>
+                <tr>
+                  <td>Yearly registration charges</td>
+                  <td>2000</td>
+                  <td>2000</td>
+                  <td>2000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-<!-- Apply table styling -->
-<style>
-  .service-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-  }
+      <section class="section comparison-section" id="hope-comparison">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Hope comparison</span>
+            <h2 class="section-title">Why choose Hope over the other plans?</h2>
+            <p class="section-copy">Hope is the strongest support tier for families that want the highest visit frequency and the widest included service coverage.</p>
+          </div>
+          <div class="comparison-grid">
+            <article class="comparison-card is-current" data-reveal>
+              <h3>Hope</h3>
+              <span class="pricing-amount">Rs 6000 / month</span>
+              <ul>
+                <li>6 free scheduled doctor visits per year</li>
+                <li>5 monthly care manager visits with one escort free</li>
+                <li>Broader additional service coverage in the plan matrix</li>
+              </ul>
+            </article>
+            <article class="comparison-card" data-reveal>
+              <h3>vs Trust</h3>
+              <ul>
+                <li>2 more free doctor visits in a year than Trust</li>
+                <li>1 more free care manager visit per month than Trust</li>
+                <li>Stronger add-on service inclusion than Trust in the comparison matrix</li>
+              </ul>
+            </article>
+            <article class="comparison-card" data-reveal>
+              <h3>vs Prime</h3>
+              <ul>
+                <li>4 more free doctor visits in a year than Prime</li>
+                <li>2 more monthly care manager visits than Prime</li>
+                <li>Best when the family wants maximum continuity instead of minimum monthly cost</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  .service-table th,
-  .service-table td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: center;
-    vertical-align: middle;
-  }
+      <section class="section comparison-section" id="trust-comparison">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Trust comparison</span>
+            <h2 class="section-title">Why choose Trust over Hope or Prime?</h2>
+            <p class="section-copy">Trust balances cost and consistency for families that need solid care management without moving to the highest monthly tier.</p>
+          </div>
+          <div class="comparison-grid">
+            <article class="comparison-card is-current" data-reveal>
+              <h3>Trust</h3>
+              <span class="pricing-amount">Rs 5000 / month</span>
+              <ul>
+                <li>4 free scheduled doctor visits per year</li>
+                <li>4 monthly care manager visits with one escort free</li>
+                <li>Useful for families wanting regular oversight at a middle price point</li>
+              </ul>
+            </article>
+            <article class="comparison-card" data-reveal>
+              <h3>vs Hope</h3>
+              <ul>
+                <li>Saves Rs 1000 every month compared with Hope</li>
+                <li>2 fewer free doctor visits a year than Hope</li>
+                <li>1 fewer monthly free care manager visit than Hope</li>
+              </ul>
+            </article>
+            <article class="comparison-card" data-reveal>
+              <h3>vs Prime</h3>
+              <ul>
+                <li>2 more free doctor visits a year than Prime</li>
+                <li>1 more monthly care manager visit than Prime</li>
+                <li>Better for families needing stronger continuity than the entry-level option</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  .service-table th {
-    background-color: #f8f9fa;
-    font-weight: 600;
-  }
+      <section class="section comparison-section" id="prime-comparison">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Prime comparison</span>
+            <h2 class="section-title">Why choose Prime over Hope or Trust?</h2>
+            <p class="section-copy">Prime keeps elder care accessible for families that want dependable coordination with the lightest membership cost.</p>
+          </div>
+          <div class="comparison-grid">
+            <article class="comparison-card is-current" data-reveal>
+              <h3>Prime</h3>
+              <span class="pricing-amount">Rs 3000 / month</span>
+              <ul>
+                <li>2 free scheduled doctor visits per year</li>
+                <li>3 monthly care manager visits</li>
+                <li>Most economical plan for families with lower visit intensity needs</li>
+              </ul>
+            </article>
+            <article class="comparison-card" data-reveal>
+              <h3>vs Hope</h3>
+              <ul>
+                <li>Saves Rs 3000 every month compared with Hope</li>
+                <li>4 fewer free doctor visits a year than Hope</li>
+                <li>2 fewer monthly care manager visits than Hope</li>
+              </ul>
+            </article>
+            <article class="comparison-card" data-reveal>
+              <h3>vs Trust</h3>
+              <ul>
+                <li>Saves Rs 2000 every month compared with Trust</li>
+                <li>2 fewer free doctor visits a year than Trust</li>
+                <li>1 fewer monthly care manager visit and no free escort note</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  .service-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-
-  .table-container {
-    overflow-x: auto;
-  }
-
-  .section-title {
-    font-size: 28px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  .section-description {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-</style>
-
-      
-<table class="dataframe service-table">
-  <thead>
-    <tr style="text-align: center;">
-      <th>Features</th>
-      <th>Hope</th>
-      <th>Trust</th>
-      <th>Prime</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Membership</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>24 x 7 Emergency Hospitalization & Ambulance Service</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-    </tr>
-    <tr>
-      <td>Doctor Home Visit - Scheduled Visit (Free in a Year)</td>
-      <td>6 FREE IN A YEAR</td>
-      <td>4 FREE IN A YEAR</td>
-      <td>2 FREE IN A YEAR</td>
-    </tr>
-    <tr>
-      <td>Doctor Home Visit - Follow-up Visit (per visit)</td>
-      <td>1500/-</td>
-      <td>1500/-</td>
-      <td>1500/-</td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Personal Care Manager Visit</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Monthly Free Visit</td>
-      <td>5 (Once Escort Free)</td>
-      <td>4 (Once Escort Free)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Extra Care Manager Visit Costs (5/10 Hours)</td>
-      <td>500/800</td>
-      <td>500/1000</td>
-      <td>600/1000</td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Sunday / Listed Holiday</td>
-      <td>800/-</td>
-      <td>900/-</td>
-      <td>1000/-</td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Courtesy Call Per Month</td>
-      <td>8</td>
-      <td>8</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Help With Hospitalisation</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Treatment / Transport</td>
-      <td>As Per Actual</td>
-      <td>As Per Actual</td>
-      <td>As Per Actual</td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Monthly Membership</td>
-      <td>6000/- Per Month</td>
-      <td>5000/- Per Month</td>
-      <td>3000/- Per Month</td>
-    </tr>
-    <tr>
-      <td>Care Manager Visit - Yearly Membership</td>
-      <td>72000/- Per Year</td>
-      <td>60000/- Per Year</td>
-      <td>36000/- Per Year</td>
-    </tr>
-    <tr>
-      <td>Other Services - Nursing Services</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Other Services - 24 x 7 Attendant</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Other Services - RDA Services</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Other Services - Physiotherapy</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Other Services - Nutrition Consultation</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Other Services - Psychological Consultation</td>
-      <td><span style="color:green; font-weight:bold;">&#10004;</span></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Yearly Registration Charges</td>
-      <td>2000/-</td>
-      <td>2000/-</td>
-      <td>2000/-</td>
-    </tr>
-  </tbody>
-</table>
-    </div>
+    <footer class="footer">
+      <div class="container footer-shell">
+        <div class="footer-copy">
+          <h3 style="font-size: 2rem;">BijonSikha</h3>
+          <p>Elegant elder care support for families in Kolkata.</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </footer>
   </div>
-</section>
 
-
-
- </main>
-
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="container">
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="plans.html">Our Plans</a></li>
-        </ul>
-      </nav>
-      <p>©2024 BijonSikha. All rights reserved.</p>
-    </div>
-  </footer>
-
+  <script defer src="js/site.js?v=20260519b"></script>
 </body>
 </html>

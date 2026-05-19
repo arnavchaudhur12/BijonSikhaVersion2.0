@@ -1,104 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - BijonSikha</title>
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | BijonSikha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="site-shell">
+    <div class="accessibility-toolbar">
+      <div class="accessibility-panel">
+        <span class="tool-label">Viewing options</span>
+        <button class="tool-button" type="button" data-font-size="default">A</button>
+        <button class="tool-button" type="button" data-font-size="large">A+</button>
+        <button class="tool-button" type="button" data-font-size="xlarge">A++</button>
+        <button class="tool-button" type="button" data-contrast-toggle aria-pressed="false">High contrast</button>
+      </div>
+    </div>
 
     <header class="main-header">
-        <div class="container">
-             <a href="index.html" class="logo">
-            <img src="https://i.postimg.cc/Hx8QfWZZ/bijonsikha.jpg?w=500" style="height:70px;">
-            <img src="https://ehealth.eletsonline.com/wp-content/uploads/2015/07/manipal-hospital.jpg" alt="Manipal Hospital Logo" style="height:70px; margin-left:16px;">
+      <div class="header-shell">
+        <a href="index.html" class="logo">
+          <div class="logo-stack">
+            <img class="logo-mark" src="companylogo/medmitra/bijonsikha.jpg" alt="BijonSikha logo">
+            <div class="logo-copy">
+              <span class="logo-title">BijonSikha</span>
+              <small>Compassionate elder care, beautifully coordinated</small>
+            </div>
+          </div>
+          <img class="partner-logo" src="companylogo/manipal/manipal-hospital.webp" alt="Manipal Hospitals logo">
         </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="plans.html">Plans</a></li> 
-                </ul>
-            </nav>
-            <a href="contact.html#form" class="btn btn-primary">Book a Consultation</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">☰</button>
+        <nav class="main-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="plans.html">Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="contact.html#form" class="btn btn-primary">Book consultation</a>
         </div>
+      </div>
     </header>
 
     <main>
-        <section class="section">
-            <div class="container">
-                <h1 class="page-title">Our Services</h1>
-                <p class="section-description">We offer a comprehensive range of elder care services tailored to meet individual needs.</p>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <img src="https://placehold.co/400x250/FFE4E6/9F1239?text=In-Home+Care" alt="In-Home Care">
-                        <div class="service-card-content">
-                            <h3>In-Home Care</h3>
-                            <p>Personalized nursing and care management at home.</p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <img src="https://placehold.co/400x250/E0E7FF/3730A3?text=Medical+Support" alt="Medical Support">
-                        <div class="service-card-content">
-                            <h3>Medical Support</h3>
-                            <p>Doctor visits, diagnostics, and medication management.</p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <img src="https://placehold.co/400x250/D1FAE5/047857?text=Specialized+Care" alt="Specialized Care">
-                        <div class="service-card-content">
-                            <h3>Specialized Care</h3>
-                            <p>Specialized care for cardiology, sleep apnea, and more.</p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <img src="https://placehold.co/400x250/FEF9C3/854D0E?text=Emergency" alt="Emergency Services">
-                        <div class="service-card-content">
-                            <h3>Emergency Services</h3>
-                            <p>24/7 ambulance services for immediate medical destination.</p>
-                        </div>
-                    </div>
-                     <div class="service-card">
-                        <img src="https://placehold.co/400x250/F3E8FF/581C87?text=Medical+Tourism" alt="Medical Tourism">
-                        <div class="service-card-content">
-                            <h3>Medical Tourism</h3>
-                            <p>Comprehensive medical tourism packages.</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Services</span>
+            <h1 class="page-title">A full support layer for ageing with confidence at home.</h1>
+            <p class="section-copy lead">Our services combine direct care, medical support, and practical coordination so families are not left managing everything alone, in collaboration with Manipal Hospitals.</p>
+          </div>
 
-        <section class="section cta-section bg-light">
-            <div class="container">
-                <h2>Ready to Discuss Your Needs?</h2>
-                <p>Contact us today for a personalized consultation and discover how we can support your family.</p>
-                <a href="contact.html#form" class="btn btn-primary">Book a Consultation</a>
-            </div>
-        </section>
+          <div class="service-grid">
+            <article class="service-card" data-reveal>
+              <img src="images/Health/images.jpg" alt="Caregiver supporting an elderly woman at home">
+              <h3>In-home care support</h3>
+              <p>Daily assistance, comfort-focused supervision, and dependable presence at home.</p>
+            </article>
+            <article class="service-card" data-reveal>
+              <img src="images/festivals/download.jpg" alt="Doctor consulting with a patient">
+              <h3>Doctor visits and follow-ups</h3>
+              <p>Scheduled medical visits, consultation coordination, and smoother treatment continuity.</p>
+            </article>
+            <article class="service-card" data-reveal>
+              <img src="images/birthdays/WhatsApp Image 2025-07-11 at 10.35.43 PM.jpeg" alt="Nurse preparing care support">
+              <h3>Nursing and recovery support</h3>
+              <p>Post-treatment, ongoing nursing needs, and structured assistance during recovery phases.</p>
+            </article>
+            <article class="service-card" data-reveal>
+              <img src="images/birthdays/WhatsApp Image 2025-07-11 at 10.35.41 PM.jpeg" alt="Ambulance and emergency support">
+              <h3>Emergency and ambulance access</h3>
+              <p>Rapid coordination support when urgent medical escalation becomes necessary.</p>
+            </article>
+            <article class="service-card" data-reveal>
+              <img src="images/birthdays/WhatsApp Image 2025-07-11 at 10.35.44 PM.jpeg" alt="Hospital escort and movement support">
+              <h3>Escort and transport support</h3>
+              <p>Supervised movement for hospital visits, diagnostics, admissions, and discharge processes.</p>
+            </article>
+            <article class="service-card" data-reveal>
+              <img src="images/birthdays/WhatsApp Image 2025-07-11 at 10.35.45 PM.jpeg" alt="Family consultation and healthcare planning">
+              <h3>Family care coordination</h3>
+              <p>Practical guidance so family members stay aligned on plans, schedules, and next steps.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-grid">
+          <div data-reveal>
+            <span class="eyebrow">Service philosophy</span>
+            <h2 class="section-title">Support that balances sensitivity with operational discipline.</h2>
+            <p class="section-copy">
+              Elder care works best when compassion is matched by consistency. Our model is designed to reduce confusion, improve follow-through, and make it easier for families to trust the day-to-day process.
+            </p>
+          </div>
+          <div class="story-grid">
+            <article class="story-card" data-reveal>
+              <h3>Structured visits</h3>
+              <p>Planned and timely support instead of last-minute improvisation.</p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Human-centred communication</h3>
+              <p>Families receive clarity without losing the warmth that good care requires.</p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Continuity across services</h3>
+              <p>Home care, medical support, and transport help work as one connected system.</p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Flexible scale</h3>
+              <p>Support can be tuned to lighter oversight needs or more intensive situations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Plan pricing</span>
+            <h2 class="section-title">Current membership pricing across all plans.</h2>
+            <p class="section-copy">All plan prices, visit structures, and comparison entry points are available here so families can review cost and support level together.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <a class="plan-card plan-link-card highlight" href="plans.html#hope-comparison" data-reveal>
+              <span class="plan-badge">Hope plan</span>
+              <h3>Highest support intensity</h3>
+              <span class="pricing-amount">Rs 6000 / month</span>
+              <p class="pricing-meta">Rs 72000 yearly membership + Rs 2000 registration</p>
+              <ul>
+                <li>6 free scheduled doctor visits in a year</li>
+                <li>5 monthly care manager visits with one free escort</li>
+                <li>Best for families seeking the broadest support coverage</li>
+              </ul>
+            </a>
+            <a class="plan-card plan-link-card" href="plans.html#trust-comparison" data-reveal>
+              <span class="plan-badge">Trust plan</span>
+              <h3>Balanced care management</h3>
+              <span class="pricing-amount">Rs 5000 / month</span>
+              <p class="pricing-meta">Rs 60000 yearly membership + Rs 2000 registration</p>
+              <ul>
+                <li>4 free scheduled doctor visits in a year</li>
+                <li>4 monthly care manager visits with one free escort</li>
+                <li>Ideal when regular oversight is needed at a lower cost than Hope</li>
+              </ul>
+            </a>
+            <a class="plan-card plan-link-card" href="plans.html#prime-comparison" data-reveal>
+              <span class="plan-badge">Prime plan</span>
+              <h3>Essential continuity</h3>
+              <span class="pricing-amount">Rs 3000 / month</span>
+              <p class="pricing-meta">Rs 36000 yearly membership + Rs 2000 registration</p>
+              <ul>
+                <li>2 free scheduled doctor visits in a year</li>
+                <li>3 monthly care manager visits</li>
+                <li>Most cost-efficient ongoing coordination option</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="plans.html">Our Plans</a></li>
-                </ul>
-            </nav>
-            <p>©2024 BijonSikha. All rights reserved.</p>
+    <footer class="footer">
+      <div class="container footer-shell">
+        <div class="footer-copy">
+          <h3 style="font-size: 2rem;">BijonSikha</h3>
+          <p>Elegant elder care support for families in Kolkata.</p>
         </div>
+        <nav class="footer-nav">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
     </footer>
+  </div>
 
+  <script defer src="js/site.js?v=20260519b"></script>
 </body>
 </html>

@@ -1,112 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About BijonSikha</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .video-frame-container {
-            display: flex;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-        .video-frame {
-            border: 4px solid #e5e7eb;
-            border-radius: 16px;
-            overflow: hidden;
-            width: 700px;
-            height: 400px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        @media (max-width: 500px) {
-            .video-frame {
-                width: 100vw;
-                height: 56vw;
-                min-height: 200px;
-                min-width: 200px;
-                max-width: 98vw;
-                max-height: 98vw;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About BijonSikha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="site-shell">
+    <div class="accessibility-toolbar">
+      <div class="accessibility-panel">
+        <span class="tool-label">Viewing options</span>
+        <button class="tool-button" type="button" data-font-size="default">A</button>
+        <button class="tool-button" type="button" data-font-size="large">A+</button>
+        <button class="tool-button" type="button" data-font-size="xlarge">A++</button>
+        <button class="tool-button" type="button" data-contrast-toggle aria-pressed="false">High contrast</button>
+      </div>
+    </div>
 
     <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="https://i.postimg.cc/Hx8QfWZZ/bijonsikha.jpg?w=500" style="height:70px;">
-                <img src="https://ehealth.eletsonline.com/wp-content/uploads/2015/07/manipal-hospital.jpg" alt="Manipal Hospital Logo" style="height:70px; margin-left:16px;">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="plans.html">Our Plans</a></li>
-                </ul>
-            </nav>
-            <a href="contact.html#form" class="btn btn-primary">Book a Consultation</a>
+      <div class="header-shell">
+        <a href="index.html" class="logo">
+          <div class="logo-stack">
+            <img class="logo-mark" src="companylogo/medmitra/bijonsikha.jpg" alt="BijonSikha logo">
+            <div class="logo-copy">
+              <span class="logo-title">BijonSikha</span>
+              <small>Compassionate elder care, beautifully coordinated</small>
+            </div>
+          </div>
+          <img class="partner-logo" src="companylogo/manipal/manipal-hospital.webp" alt="Manipal Hospitals logo">
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">☰</button>
+        <nav class="main-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="contact.html#form" class="btn btn-primary">Book consultation</a>
         </div>
+      </div>
     </header>
 
     <main>
-        <section class="section about-page">
-            <div class="container text-container">
-                <h1 class="page-title">About BijonSikha</h1>
-                <p>BijonSikha is a compassionate elder care service in Kolkata, dedicated to providing dignified and respectful care for seniors. We are backed by the medical excellence of Manipal Hospitals, ensuring access to top doctors and advanced technology.</p>
-                
-                <h2>Our Mission</h2>
-                <p>Our mission is to enhance the quality of life for seniors by providing personalized care that respects their dignity and independence. We strive to create a supportive environment where seniors feel valued and cared for.</p>
-                
-                <!-- Video Section with Autoplay -->
-                <div class="video-frame-container">
-                    <div class="video-frame">
-                        <iframe 
-                            width="100%" 
-                            height="100%" 
-                            src="https://www.youtube.com/embed/EXAYVi0ZLRs?si=3EfGDC6kJH-MZo3i&autoplay=1&mute=1" 
-                            title="BijonSikha Video" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen
-                            loading="lazy"
-                        ></iframe>
-                    </div>
-                </div>
-                <!-- End Video Section -->
+      <section class="section">
+        <div class="container split-grid">
+          <div data-reveal>
+            <span class="eyebrow">About us</span>
+            <h1 class="page-title">Care built on dignity, continuity, and trust.</h1>
+            <p class="lead">
+              BijonSikha exists to make elder care feel structured, compassionate, and reassuring for families who need dependable support in Kolkata.
+            </p>
+            <p>
+              Our model combines practical home support with the discipline of healthcare coordination, helping seniors live with greater ease while relatives gain more clarity and confidence, in collaboration with Manipal Hospitals.
+            </p>
+          </div>
+          <div class="video-frame" data-reveal>
+            <iframe src="https://www.youtube.com/embed/EXAYVi0ZLRs?autoplay=1&mute=1" title="BijonSikha overview video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
 
-                <h2>History of the Niramay Group</h2>
-                <p>BijonSikha is a part of the Niramay Group, a trusted name in healthcare for over two decades. With a legacy of compassionate care and medical excellence, Niramay Group has been serving the community with dedication and integrity.</p>
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Our story</span>
+            <h2 class="section-title">Built from healthcare experience and family realities.</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-card" data-reveal>
+              <span class="timeline-year">Origin</span>
+              <h3>From a care gap families know too well</h3>
+              <p>Families often struggle to coordinate caregiving, medical logistics, and emergency support at the same time. BijonSikha was shaped around solving exactly that.</p>
+            </article>
+            <article class="timeline-card" data-reveal>
+              <span class="timeline-year">Niramay group</span>
+              <h3>Backed by a long-standing healthcare ecosystem</h3>
+              <p>As part of the Niramay Group, BijonSikha grows from a legacy of practical care, operational trust, and community-focused service.</p>
+            </article>
+            <article class="timeline-card" data-reveal>
+              <span class="timeline-year">Medical partnership</span>
+              <h3>Designed to stay close to clinical support</h3>
+              <p>The approach is built in collaboration with Manipal Hospitals to complement hospital-grade medical pathways with home-based, family-facing care delivery.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                <h2>Collaboration with Manipal Hospitals</h2>
-                <p>Our collaboration with Manipal Hospitals brings unparalleled medical expertise to our elder care services. This partnership ensures that our seniors have access to top doctors, advanced medical technology, and seamless healthcare support.</p>
-            </div>
-        </section>
+      <section class="section">
+        <div class="container">
+          <div class="story-grid">
+            <article class="story-card" data-reveal>
+              <h3>Our mission</h3>
+              <p>To help seniors age with dignity while giving families a more stable, transparent support system.</p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Our promise</h3>
+              <p>We treat every family journey with seriousness, warmth, and consistent follow-through.</p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Our standard</h3>
+              <p>Thoughtful communication, dependable scheduling, and care experiences that feel composed rather than chaotic.</p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Our focus</h3>
+              <p>Keeping care personal, respectful, and practical across both everyday and high-pressure situations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="plans.html">Our Plans</a></li>
-                </ul>
-            </nav>
-            <p>©2024 BijonSikha. All rights reserved.</p>
+    <footer class="footer">
+      <div class="container footer-shell">
+        <div class="footer-copy">
+          <h3 style="font-size: 2rem;">BijonSikha</h3>
+          <p>Elegant elder care support for families in Kolkata.</p>
         </div>
+        <nav class="footer-nav">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
     </footer>
+  </div>
 
+  <script defer src="js/site.js?v=20260519b"></script>
 </body>
 </html>
