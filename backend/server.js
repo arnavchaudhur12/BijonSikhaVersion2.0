@@ -470,27 +470,31 @@ app.post('/api/admin/bills/generate', requireAdmin, async (req, res) => {
     fs.writeFileSync(outputPath, pdfBuffer);
 
     if (transporter) {
-      await transporter.sendMail({
-        from: `"BijonSikha Billing" <${process.env.EMAIL_USER}>`,
-        to: BILL_EMAIL_RECIPIENTS.join(', '),
-        subject: `BijonSikha Bill | ${payload.memberName} | ${payload.billDate}`,
-        html: `
-          <h2>BijonSikha Membership Bill</h2>
-          <p>Please find the generated bill attached to this email.</p>
-          <p><strong>Member Name:</strong> ${escapeHtml(payload.memberName)}</p>
-          <p><strong>Care Plan Name:</strong> ${escapeHtml(payload.carePlanName)}</p>
-          <p><strong>Total Amount:</strong> ${escapeHtml(payload.totalAmount)}</p>
-          <p><strong>Bill Date:</strong> ${escapeHtml(payload.billDate)}</p>
-          <p>This email was generated automatically from the BijonSikha admin billing dashboard.</p>
-        `,
-        attachments: [
-          {
-            filename: downloadName,
-            content: pdfBuffer,
-            contentType: 'application/pdf',
-          },
-        ],
-      });
+      try {
+        await transporter.sendMail({
+          from: `"BijonSikha Billing" <${process.env.EMAIL_USER}>`,
+          to: BILL_EMAIL_RECIPIENTS.join(', '),
+          subject: `BijonSikha Bill | ${payload.memberName} | ${payload.billDate}`,
+          html: `
+            <h2>BijonSikha Membership Bill</h2>
+            <p>Please find the generated bill attached to this email.</p>
+            <p><strong>Member Name:</strong> ${escapeHtml(payload.memberName)}</p>
+            <p><strong>Care Plan Name:</strong> ${escapeHtml(payload.carePlanName)}</p>
+            <p><strong>Total Amount:</strong> ${escapeHtml(payload.totalAmount)}</p>
+            <p><strong>Bill Date:</strong> ${escapeHtml(payload.billDate)}</p>
+            <p>This email was generated automatically from the BijonSikha admin billing dashboard.</p>
+          `,
+          attachments: [
+            {
+              filename: downloadName,
+              content: pdfBuffer,
+              contentType: 'application/pdf',
+            },
+          ],
+        });
+      } catch (emailError) {
+        console.error('Bill generated, but email notification failed:', emailError);
+      }
     }
 
     res.setHeader('Content-Type', 'application/pdf');
